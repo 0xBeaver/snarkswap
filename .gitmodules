@@ -1,0 +1,9 @@
+[submodule "snarkswap-circuits"]
+	path = snarkswap-circuits
+	url = https://github.com/0xBeaver/snarkswap-circuits
+[submodule "snarkswap-contracts"]
+	path = snarkswap-contracts
+	url = https://github.com/0xBeaver/snarkswap-contracts
+[submodule "snarkswap-client"]
+	path = snarkswap-client
+	url = https://github.com/0xBeaver/snarkswap-client

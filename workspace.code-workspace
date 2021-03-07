@@ -1,0 +1,36 @@
+{
+	"folders": [
+		{
+			"path": "snarkswap-circuits",
+			"name": "circuits"
+		},
+		{
+			"path": "snarkswap-contracts",
+			"name": "contracts"
+		},
+		{
+			"path": "snarkswap-client",
+			"name": "client"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"solidity.compileUsingRemoteVersion": "v0.8.1+commit.df193b15",
+		"solidity.packageDefaultDependenciesContractsDirectory": "",
+		"solidity.packageDefaultDependenciesDirectory": "contracts/node_modules",
+		"files.exclude": {
+			"snarkswap-contracts": true,
+			"snarkswap-circuits": true,
+			"snarkswap-client": true
+		},
+	},
+	"extensions": {
+		"recommendations": [
+			"streetsidesoftware.code-spell-checker",
+			"ms-vscode.vscode-typescript-tslint-plugin",
+			"juanblanco.solidity",
+		]
+	}
+}
