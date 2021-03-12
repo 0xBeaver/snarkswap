@@ -1,7 +1,10 @@
 submodules:
 	git submodule update --init --recursive
 
-all: contracts circuits client
+clean:
+	rm -rf ./snarkswap-*/node_modules && yarn cache clean
+
+all: client contracts circuits
 
 contracts:
 	cd snarkswap-contracts && yarn
@@ -10,7 +13,7 @@ circuits:
 	cd snarkswap-circuits && yarn
 
 client:
-	cd snarkswap-client && yarn
+	cd snarkswap-client && yarn && yarn build
 
 test: test-contracts test-circuits test-client
 
@@ -21,4 +24,4 @@ test-circuits:
 	cd snarkswap-circuits && yarn test
 
 test-client:
-	cd snarkswap-client && yarn test
+	cd snarkswap-client && yarn test:unit
